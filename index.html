@@ -1,330 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anki Tool Privacy Policy</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 1.8rem;
-            color: #222;
-            text-align: center;
-            margin-bottom: 0.5rem;
-            border-bottom: 2px solid #d89822; /* Anki Tool primary color */
-            padding-bottom: 0.5rem;
-        }
-        h2 {
-            font-size: 1.4rem;
-            color: #333;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.3rem;
-        }
-        h3 {
-            font-size: 1.1rem;
-            color: #444;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-        }
-        p, li {
-            font-size: 0.95rem;
-            color: #555;
-            margin-bottom: 0.8rem;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 25px;
-        }
-        a {
-            color: #1a73e8; /* Link color similar to settings.css */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        strong {
-            font-weight: 600;
-            color: #222;
-        }
-        .last-updated {
-            text-align: center;
-            color: #777;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-        }
-        .toc {
-            background-color: #fdf4e3; /* Anki Tool light color */
-            border: 1px solid #e0e0e0; /* Border color */
-            border-radius: 6px;
-            padding: 1rem 1.5rem;
-            margin-bottom: 2rem;
-        }
-        .toc h2 {
-            margin-top: 0;
-            border-bottom: none;
-            font-size: 1.2rem;
-        }
-        .toc ul {
-            list-style: none;
-            padding: 0;
-        }
-        .toc li {
-            margin-bottom: 0.5rem;
-        }
-        .toc a {
-            color: #5f6368; /* Text secondary color */
-            font-weight: 500;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-            font-size: 0.9rem;
-        }
-        th, td {
-            border: 1px solid #e0e0e0;
-            padding: 0.6rem 0.8rem;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background-color: #f7f8fc; /* Background color */
-            font-weight: 600;
-        }
-        code {
-          background-color: #e8eaed;
-          padding: 2px 6px;
-          border-radius: 4px;
-          font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-          font-size: 0.85em;
-          color: var(--text-color, #202124);
-          border: 1px solid #dadce0;
-        }
-
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        background-color: #f9f9f9;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 1.8rem;
+        color: #222;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #d89822; /* Anki Tool primary color */
+        padding-bottom: 0.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+        color: #333;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 0.3rem;
+      }
+      h3 {
+        font-size: 1.1rem;
+        color: #444;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+      }
+      p,
+      li {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 0.8rem;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 25px;
+      }
+      a {
+        color: #1a73e8; /* Link color similar to settings.css */
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      strong {
+        font-weight: 600;
+        color: #222;
+      }
+      .last-updated {
+        text-align: center;
+        color: #777;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+      }
+      .toc {
+        background-color: #fdf4e3; /* Anki Tool light color */
+        border: 1px solid #e0e0e0; /* Border color */
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .toc h2 {
+        margin-top: 0;
+        border-bottom: none;
+        font-size: 1.2rem;
+      }
+      .toc ul {
+        list-style: none;
+        padding: 0;
+      }
+      .toc li {
+        margin-bottom: 0.5rem;
+      }
+      .toc a {
+        color: #5f6368; /* Text secondary color */
+        font-weight: 500;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+      }
+      th,
+      td {
+        border: 1px solid #e0e0e0;
+        padding: 0.6rem 0.8rem;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background-color: #f7f8fc; /* Background color */
+        font-weight: 600;
+      }
+      code {
+        background-color: #e8eaed;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+          Courier, monospace;
+        font-size: 0.85em;
+        color: #202124; /* Use a default or pull from CSS var if possible */
+        border: 1px solid #dadce0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>PRIVACY POLICY</h1>
-        <p class="last-updated">Last updated: July 05, 2024</p>
+      <h1>PRIVACY POLICY</h1>
+      <p class="last-updated">Last updated: April 28, 2025</p>
 
-        <p>This privacy notice for Anki Tool ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>") describes how and why we might collect, store, use, and/or share ("<strong>process</strong>") your information when you use our services ("<strong>Services</strong>"), such as when you install and use the Anki Tool Chrome Extension.</p>
+      <p>
+        This privacy notice for Anki Tool ("<strong>we</strong>,"
+        "<strong>us</strong>," or "<strong>our</strong>") describes how and why
+        we might collect, store, use, and/or share ("<strong>process</strong>")
+        your information when you use our services
+        ("<strong>Services</strong>"), such as when you install and use the Anki
+        Tool Chrome Extension.
+      </p>
 
-        <p><strong>Questions or concerns?</strong> Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>.</p>
+      <p>
+        <strong>Questions or concerns?</strong> Reading this privacy notice will
+        help you understand your privacy rights and choices. If you do not agree
+        with our policies and practices, please do not use our Services. If you
+        still have any questions or concerns, please contact us using the
+        details provided in Section 11 below.
+      </p>
 
-        <h2>SUMMARY OF KEY POINTS</h2>
-
-        <p><strong><em>This summary provides key points from our privacy notice, but you can find out more details about any of these topics by using our table of contents below to find the section you are looking for.</em></strong></p>
-
-        <p><strong>What personal information do we process?</strong> We process information you provide through the extension's settings (like preferred language, theme, feature toggles) which is stored locally on your device using browser storage mechanisms (`chrome.storage.local`). Content you enter to create flashcards (text, tags, audio file references) is processed transiently to send to your local AnkiConnect instance and is <strong>not</strong> stored or transmitted to us. We do not collect personal information automatically beyond what is necessary for the extension's basic functionality and local storage.</p>
-
-        <p><strong>Do we process any sensitive personal information?</strong> We do not process sensitive personal information.</p>
-
-        <p><strong>Do we receive any information from third parties?</strong> We do not receive any information from third-party sources.</p>
-
-        <p><strong>How do we process your information?</strong> We process your locally stored settings to provide and administer the Services (e.g., remember your theme, language, selected deck/model). We process the card information you enter solely to transmit it to your local AnkiConnect instance for card creation. We do this to provide the core functionality of the extension.</p>
-
-        <p><strong>In what situations and with which parties do we share personal information?</strong> We <strong>do not share</strong> your personal information or flashcard content with any external third parties or the developer. Information for card creation is sent <strong>only</strong> to your local AnkiConnect instance running on your own computer.</p>
-
-        <p><strong>How do we keep your information safe?</strong> We implement standard technical security measures within the extension's code. Information stored locally (`chrome.storage.local`) is protected by your browser's security model. However, the security of data sent to AnkiConnect and stored within your Anki collection depends on the security of your own computer and Anki setup.</p>
-
-        <p><strong>What are your rights?</strong> You have rights regarding the information stored locally by the extension, such as accessing or deleting settings data. Since card content is not stored by the extension, managing that data must be done within Anki itself.</p>
-
-        <p><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights regarding locally stored settings data is by contacting us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>. You can also manage extension storage via your browser's settings or by uninstalling the extension.</p>
-
-        <p>Want to learn more about what we do with any information we collect? Review the privacy notice in full.</p>
-
-
-        <div class="toc">
-            <h2>TABLE OF CONTENTS</h2>
-            <ul>
-                <li><a href="#infocollect">1. WHAT INFORMATION DO WE COLLECT?</a></li>
-                <li><a href="#infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
-                <li><a href="#whoshare">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
-                <li><a href="#inforetain">4. HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
-                <li><a href="#infosafe">5. HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
-                <li><a href="#infominors">6. DO WE COLLECT INFORMATION FROM MINORS?</a></li>
-                <li><a href="#privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
-                <li><a href="#DNT">8. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
-                <li><a href="#uslaws">9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
-                <li><a href="#policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
-                <li><a href="#contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
-                <li><a href="#request">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
-            </ul>
-        </div>
-
-        <h2 id="infocollect">1. WHAT INFORMATION DO WE COLLECT?</h2>
-
-        <h3>Personal information stored locally</h3>
-        <p><strong><em>In Short:</em></strong> <em>We store certain settings and preferences locally on your device using browser storage mechanisms. We do not collect or store the content of your flashcards on our servers.</em></p>
-
-        <p>We collect and store the following information locally on your device using `chrome.storage.local` when you interact with our Services:</p>
+      <div class="toc">
+        <h2>TABLE OF CONTENTS</h2>
         <ul>
-            <li><strong>Settings and Preferences:</strong> This includes your selected language, theme preference (light/dark), feature toggle states (e.g., enable audio, enable formatting, enable tags, require all fields), your last selected Anki deck and model name, and your last selected audio field. This information is used solely to configure the extension according to your preferences and improve usability.</li>
-            <li><strong>Usage Metrics (Local Only):</strong> For features like the rating reminder, we may store the extension installation date and a count of cards created. This data remains on your local device and is not transmitted to us.</li>
+          <li><a href="#infocollect">1. WHAT INFORMATION DO WE COLLECT?</a></li>
+          <li><a href="#infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+          <li>
+            <a href="#whoshare"
+              >3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a
+            >
+          </li>
+          <li>
+            <a href="#inforetain">4. HOW LONG DO WE KEEP YOUR INFORMATION?</a>
+          </li>
+          <li>
+            <a href="#infosafe">5. HOW DO WE KEEP YOUR INFORMATION SAFE?</a>
+          </li>
+          <li>
+            <a href="#infominors">6. DO WE COLLECT INFORMATION FROM MINORS?</a>
+          </li>
+          <li><a href="#privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+          <li><a href="#DNT">8. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+          <li>
+            <a href="#uslaws"
+              >9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a
+            >
+          </li>
+          <li>
+            <a href="#policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</a>
+          </li>
+          <li>
+            <a href="#contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>
+          </li>
+          <li>
+            <a href="#request"
+              >12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT
+              FROM YOU?</a
+            >
+          </li>
         </ul>
+      </div>
 
-        <h3>Information processed transiently for core functionality</h3>
-         <p><strong><em>In Short:</em></strong> <em>Information you enter to create flashcards is processed temporarily only to send it to your local AnkiConnect instance.</em></p>
-        <p>When you use the extension to create an Anki card, the following information is processed temporarily by the extension solely for the purpose of constructing the request to your local AnkiConnect add-on:</p>
-        <ul>
-            <li><strong>Flashcard Content:</strong> Text and any embedded images (via copy/paste) you enter into the card fields (e.g., Front, Back).</li>
-            <li><strong>Tags:</strong> Any tags you add to the card.</li>
-            <li><strong>Audio Information:</strong> If you upload an audio file, the file data is sent to AnkiConnect to be stored in your Anki media collection, and a reference (e.g., `[sound:filename.mp3]`) is added to the selected card field. The extension does not store the audio file itself after transmission.</li>
-            <li><strong>Deck and Model Names:</strong> The names of the Anki deck and card model (note type) you select for card creation.</li>
-        </ul>
-         <p><strong>This flashcard content is sent directly from the extension in your browser to the AnkiConnect add-on running within your local Anki application (typically at <code>http://localhost:8765</code>). This information is NOT transmitted to, collected by, or stored on any servers controlled by us.</strong></p>
+      <h2 id="infocollect">1. WHAT INFORMATION DO WE COLLECT?</h2>
 
-        <h3>Information collected automatically</h3>
-         <p><strong><em>In Short:</em></strong> <em>The extension itself does not automatically collect personal information like your IP address, browser type, or browsing habits.</em></p>
-        <p>The Anki Tool extension does not automatically collect information such as your IP address, browser and device characteristics, operating system, referring URLs, device name, country, location, or information about how and when you use our Services. Standard browser extension mechanisms might provide some general context, but we do not actively collect, store, or process this data.</p>
+      <h3>Personal information stored locally</h3>
+      <p>
+        We store certain settings and preferences locally on your device using
+        browser storage mechanisms (`chrome.storage.local`). We do not collect
+        or store the content of your flashcards on our servers.
+      </p>
+      <p>
+        We collect and store the following information locally on your device
+        using `chrome.storage.local` when you interact with our Services:
+      </p>
+      <ul>
+        <li>
+          <strong>Settings and Preferences:</strong> This includes your selected
+          language, theme preference (light/dark), feature toggle states (e.g.,
+          enable audio, enable formatting, enable tags, require all fields),
+          your last selected Anki deck and model name, and your last selected
+          audio field. This information is used solely to configure the
+          extension according to your preferences and improve usability.
+        </li>
+        <li>
+          <strong>Usage Metrics (Local Only):</strong> For features like the
+          rating reminder, we may store the extension installation date and a
+          count of cards created. This data remains on your local device and is
+          not transmitted to us.
+        </li>
+      </ul>
 
-        <h3>Sensitive Information</h3>
-        <p>We do not request, collect, or process sensitive personal information (e.g., social security numbers, information related to racial or ethnic origin, political opinions, religion or other beliefs, health, biometrics, or genetic characteristics, criminal background, or trade union membership).</p>
+      <h3>Information processed transiently for core functionality</h3>
+      <p>
+        Information you enter to create flashcards is processed temporarily only
+        to send it to your local AnkiConnect instance.
+      </p>
+      <p>
+        When you use the extension to create an Anki card, the following
+        information is processed temporarily by the extension solely for the
+        purpose of constructing the request to your local AnkiConnect add-on:
+      </p>
+      <ul>
+        <li>
+          <strong>Flashcard Content:</strong> Text and any embedded images (via
+          copy/paste) you enter into the card fields (e.g., Front, Back).
+        </li>
+        <li><strong>Tags:</strong> Any tags you add to the card.</li>
+        <li>
+          <strong>Audio Information:</strong> If you upload an audio file, the
+          file data is sent to AnkiConnect to be stored in your Anki media
+          collection, and a reference (e.g., `[sound:filename.mp3]`) is added to
+          the selected card field. The extension does not store the audio file
+          itself after transmission.
+        </li>
+        <li>
+          <strong>Deck and Model Names:</strong> The names of the Anki deck and
+          card model (note type) you select for card creation.
+        </li>
+      </ul>
+      <p>
+        <strong
+          >This flashcard content is sent directly from the extension in your
+          browser to the AnkiConnect add-on running within your local Anki
+          application (typically at <code>http://localhost:8765</code>). This
+          information is NOT transmitted to, collected by, or stored on any
+          servers controlled by us.</strong
+        >
+      </p>
 
-        <h2 id="infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
-        <p><strong><em>In Short:</em></strong> <em>We process your information to provide the extension's functionality, maintain your settings locally, and communicate with you if you contact us.</em></p>
+      <h3>Information collected automatically</h3>
+      <p>
+        The Anki Tool extension does not automatically collect information such
+        as your IP address, browser and device characteristics, operating
+        system, referring URLs, device name, country, location, or information
+        about how and when you use our Services. Standard browser extension
+        mechanisms might provide some general context, but we do not actively
+        collect, store, or process this data.
+      </p>
 
-        <p>We process the information we collect/store locally for the following purposes:</p>
-        <ul>
-            <li><strong>To provide the core functionality of the Services.</strong> We process the flashcard content, tags, audio references, deck name, and model name you provide solely to construct and send the card creation request to your local AnkiConnect instance.</li>
-            <li><strong>To save and manage your preferences locally.</strong> We use `chrome.storage.local` to remember your settings (language, theme, toggles, last used deck/model) so the extension works as you've configured it across sessions.</li>
-            <li><strong>To improve the Services.</strong> We may use locally stored, non-identifiable usage metrics (like install date or card count) solely on your device to trigger helpful prompts, such as a request for rating after significant usage. This data is not sent to us.</li>
-            <li><strong>To respond to user inquiries/offer support to users.</strong> If you contact us directly (e.g., via email), we may process the information you provide to respond to your questions or support requests.</li>
-             <li><strong>To comply with law.</strong> We may process your information to comply with applicable laws or respond to valid legal requests (though this is highly unlikely given the nature of the data processed).</li>
-        </ul>
+      <h3>Sensitive Information</h3>
+      <p>
+        We do not request, collect, or process sensitive personal information
+        (e.g., social security numbers, information related to racial or ethnic
+        origin, political opinions, religion or other beliefs, health,
+        biometrics, or genetic characteristics, criminal background, or trade
+        union membership).
+      </p>
 
-        <h2 id="whoshare">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
-        <p><strong><em>In Short:</em></strong> <em>We DO NOT share your personal information or flashcard content with any external third parties. Card data is only sent locally to your AnkiConnect instance.</em></p>
+      <h2 id="infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+      <p>
+        We process your information to provide the extension's functionality,
+        maintain your settings locally, and communicate with you if you contact
+        us.
+      </p>
+      <p>
+        We process the information we collect/store locally for the following
+        purposes:
+      </p>
+      <ul>
+        <li>
+          <strong>To provide the core functionality of the Services.</strong> We
+          process the flashcard content, tags, audio references, deck name, and
+          model name you provide solely to construct and send the card creation
+          request to your local AnkiConnect instance.
+        </li>
+        <li>
+          <strong>To save and manage your preferences locally.</strong> We use
+          `chrome.storage.local` to remember your settings (language, theme,
+          toggles, last used deck/model) so the extension works as you've
+          configured it across sessions.
+        </li>
+        <li>
+          <strong>To improve the Services.</strong> We may use locally stored,
+          non-identifiable usage metrics (like install date or card count)
+          solely on your device to trigger helpful prompts, such as a request
+          for rating after significant usage. This data is not sent to us.
+        </li>
+        <li>
+          <strong>To respond to user inquiries/offer support to users.</strong>
+          If you contact us directly (e.g., via email), we may process the
+          information you provide to respond to your questions or support
+          requests.
+        </li>
+        <li>
+          <strong>To comply with law.</strong> We may process your information
+          to comply with applicable laws or respond to valid legal requests
+          (though this is highly unlikely given the nature of the data
+          processed).
+        </li>
+      </ul>
 
-        <p><strong>We reiterate: Your flashcard content (text, images, audio references, tags) and selected deck/model information are sent ONLY from the extension in your browser to the AnkiConnect add-on running on your local machine. We do not collect, store, or have access to this information.</strong></p>
-        <p>We do not sell, rent, or share any personal information (including locally stored settings) with external third parties for business or commercial purposes.</p>
-        <p>We do not engage in business transfers, affiliate sharing, or other activities that would involve sharing user data with other companies.</p>
+      <h2 id="whoshare">
+        3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
+      </h2>
+      <p>
+        We DO NOT share your personal information or flashcard content with any
+        external third parties. Card data is only sent locally to your
+        AnkiConnect instance.
+      </p>
+      <p>
+        <strong
+          >We reiterate: Your flashcard content (text, images, audio references,
+          tags) and selected deck/model information are sent ONLY from the
+          extension in your browser to the AnkiConnect add-on running on your
+          local machine. We do not collect, store, or have access to this
+          information.</strong
+        >
+      </p>
+      <p>
+        We do not sell, rent, or share any personal information (including
+        locally stored settings) with external third parties for business or
+        commercial purposes.
+      </p>
+      <p>
+        We do not engage in business transfers, affiliate sharing, or other
+        activities that would involve sharing user data with other companies.
+      </p>
 
-        <h2 id="inforetain">4. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-        <p><strong><em>In Short:</em></strong> <em>We keep locally stored settings for as long as you use the extension or until you clear them. Flashcard content is processed transiently and not retained by the extension.</em></p>
+      <h2 id="inforetain">4. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+      <p>
+        We keep locally stored settings for as long as you use the extension or
+        until you clear them. Flashcard content is processed transiently and not
+        retained by the extension.
+      </p>
+      <p>
+        We only keep your locally stored personal information (settings and
+        preferences in `chrome.storage.local`) for as long as it is necessary
+        for the purposes set out in this privacy notice, primarily for the
+        duration you have the extension installed and configured.
+      </p>
+      <p>
+        You can clear this locally stored data through your browser's extension
+        management settings or by uninstalling the extension.
+      </p>
+      <p>
+        Information entered for flashcard creation is processed only temporarily
+        to send to AnkiConnect and is not retained by the extension afterward.
+      </p>
 
-        <p>We only keep your locally stored personal information (settings and preferences in `chrome.storage.local`) for as long as it is necessary for the purposes set out in this privacy notice, primarily for the duration you have the extension installed and configured.</p>
-        <p>You can clear this locally stored data through your browser's extension management settings or by uninstalling the extension.</p>
-        <p>Information entered for flashcard creation is processed only temporarily to send to AnkiConnect and is not retained by the extension afterward.</p>
+      <h2 id="infosafe">5. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+      <p>
+        We use standard technical measures within the extension. Locally stored
+        data relies on browser security. Data sent to AnkiConnect relies on your
+        local machine's security.
+      </p>
+      <p>
+        We have implemented appropriate technical security measures within the
+        extension's code designed to protect the integrity of the extension
+        itself. Information stored locally via `chrome.storage.local` is managed
+        and protected by your web browser's security mechanisms.
+      </p>
+      <p>
+        However, please be aware that the security of the data transmission
+        between the extension and your local AnkiConnect instance (usually over
+        an unencrypted HTTP connection on `localhost`) and the security of your
+        Anki collection itself depend entirely on the security of your own
+        computer and network environment. We cannot guarantee the security of
+        this local communication or your Anki data.
+      </p>
+      <p>
+        Transmission of data within your local machine (extension to
+        AnkiConnect) carries inherent risks, and securing your computer system
+        is your responsibility.
+      </p>
 
-        <h2 id="infosafe">5. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-        <p><strong><em>In Short:</em></strong> <em>We use standard technical measures within the extension. Locally stored data relies on browser security. Data sent to AnkiConnect relies on your local machine's security.</em></p>
+      <h2 id="infominors">6. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+      <p>
+        We do not knowingly collect data from or market to children under 13
+        years of age (or higher age as required by law).
+      </p>
+      <p>
+        We do not knowingly solicit data from or market to children under 13
+        years of age (or the relevant minimum age in other jurisdictions). By
+        using the Services, you represent that you are at least 13 or that you
+        are the parent or guardian of such a minor and consent to such minor
+        dependent’s use of the Services. If we learn that personal information
+        from users less than the minimum age has been inadvertently collected
+        (e.g., through support emails), we will take reasonable measures to
+        promptly delete such data from our records. If you become aware of any
+        data we may have collected from children under the minimum age, please
+        contact us using the details provided in Section 11 below.
+      </p>
 
-        <p>We have implemented appropriate technical security measures within the extension's code designed to protect the integrity of the extension itself. Information stored locally via `chrome.storage.local` is managed and protected by your web browser's security mechanisms.</p>
-        <p>However, please be aware that the security of the data transmission between the extension and your local AnkiConnect instance (usually over an unencrypted HTTP connection on `localhost`) and the security of your Anki collection itself depend entirely on the security of your own computer and network environment. We cannot guarantee the security of this local communication or your Anki data.</p>
-        <p>Transmission of data within your local machine (extension to AnkiConnect) carries inherent risks, and securing your computer system is your responsibility.</p>
+      <h2 id="privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+      <p>
+        You can review or change the locally stored settings data, or withdraw
+        consent by uninstalling. Managing flashcard content must be done within
+        Anki.
+      </p>
+      <p>
+        You have rights regarding the personal information stored locally by the
+        extension (your settings and preferences). These may include the right
+        to:
+      </p>
+      <ul>
+        <li>Request access to the settings data stored locally.</li>
+        <li>
+          Request correction of inaccurate settings data (usually managed
+          directly within the extension's settings interface).
+        </li>
+        <li>
+          Request deletion of locally stored settings data (achieved by clearing
+          browser storage for the extension or uninstalling it).
+        </li>
+      </ul>
+      <p>
+        <strong>Withdrawing your consent:</strong> You have the right to
+        withdraw your consent to process locally stored data at any time. You
+        can withdraw your consent by uninstalling the extension. This will not
+        affect the lawfulness of the processing before its withdrawal.
+      </p>
+      <p>
+        <strong>Managing Flashcard Content:</strong> Since the extension does
+        not store your flashcard content, any requests to access, modify, or
+        delete flashcard data must be handled directly within your Anki
+        application.
+      </p>
+      <p>
+        To exercise rights related to locally stored settings, please contact us
+        using the details provided in Section 11, or manage the data via browser
+        settings/uninstallation.
+      </p>
 
-        <h2 id="infominors">6. DO WE COLLECT INFORMATION FROM MINORS?</h2>
-        <p><strong><em>In Short:</em></strong> <em>We do not knowingly collect data from or market to children under 13 years of age (or higher age as required by law).</em></p>
+      <h2 id="DNT">8. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+      <p>
+        Most web browsers and some mobile operating systems and mobile
+        applications include a Do-Not-Track ("DNT") feature or setting you can
+        activate to signal your privacy preference not to have data about your
+        online browsing activities monitored and collected. At this stage, no
+        uniform technology standard for recognizing and implementing DNT signals
+        has been finalized. As such, we do not currently respond to DNT browser
+        signals or any other mechanism that automatically communicates your
+        choice not to be tracked online. If a standard for online tracking is
+        adopted that we must follow in the future, we will inform you about that
+        practice in a revised version of this privacy notice.
+      </p>
 
-        <p>We do not knowingly solicit data from or market to children under 13 years of age (or the relevant minimum age in other jurisdictions). By using the Services, you represent that you are at least 13 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services. If we learn that personal information from users less than the minimum age has been inadvertently collected (e.g., through support emails), we will take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under the minimum age, please contact us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>.</p>
+      <h2 id="uslaws">
+        9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+      </h2>
+      <p>
+        Residents of certain US states have specific rights regarding their
+        personal information. However, given the limited nature of data
+        collection by this extension, these rights primarily apply to any
+        information you might provide if you contact us directly (e.g., your
+        email address).
+      </p>
+      <p>
+        If you are a resident of California, Colorado, Connecticut, Delaware,
+        Florida, Indiana, Iowa, Kentucky, Montana, New Hampshire, New Jersey,
+        Oregon, Tennessee, Texas, Utah, or Virginia, you may have specific
+        rights regarding your personal information under applicable state laws.
+      </p>
 
-        <h2 id="privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-        <p><strong><em>In Short:</em></strong> <em>You can review or change the locally stored settings data, or withdraw consent by uninstalling. Managing flashcard content must be done within Anki.</em></p>
+      <h3>Categories of Personal Information We Collect</h3>
+      <p>
+        As described in Section 1, the Anki Tool extension primarily stores
+        settings locally and processes flashcard content transiently. We do not
+        collect the categories of personal information listed in typical privacy
+        policies (like identifiers, commercial information, geolocation, etc.)
+        through the extension's normal operation. The only potential collection
+        occurs if you contact us directly via email, in which case we collect
+        your email address and any information you voluntarily provide in your
+        message (likely falling under "Identifiers").
+      </p>
+      <p>The following table reflects this limited scope:</p>
 
-        <p>You have rights regarding the personal information stored locally by the extension (your settings and preferences). These may include the right to:</p>
-        <ul>
-            <li>Request access to the settings data stored locally.</li>
-            <li>Request correction of inaccurate settings data (usually managed directly within the extension's settings interface).</li>
-            <li>Request deletion of locally stored settings data (achieved by clearing browser storage for the extension or uninstalling it).</li>
-        </ul>
-        <p><strong>Withdrawing your consent:</strong> You can withdraw your consent to process locally stored data at any time by uninstalling the extension. This will not affect the lawfulness of processing based on consent before its withdrawal.</p>
-        <p><strong>Managing Flashcard Content:</strong> Since the extension does not store your flashcard content, any requests to access, modify, or delete flashcard data must be handled directly within your Anki application.</p>
-        <p>To exercise rights related to locally stored settings, please contact us using the details in the "<a href="#contact">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>" section below, or manage the data via browser settings/uninstallation.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Collected via Extension Operation</th>
+            <th>Collected if You Contact Us</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A. Identifiers</td>
+            <td>
+              Contact details, such as real name, alias, postal address,
+              telephone or mobile contact number, unique personal identifier,
+              online identifier, Internet Protocol address, email address, and
+              account name
+            </td>
+            <td>NO</td>
+            <td>
+              YES (Email address and any identifiers you provide in your
+              message)
+            </td>
+          </tr>
+          <tr>
+            <td>B. Personal information (Cal. Customer Records statute)</td>
+            <td>
+              Name, contact information, education, employment, employment
+              history, and financial information
+            </td>
+            <td>NO</td>
+            <td>Potentially, if provided in email</td>
+          </tr>
+          <tr>
+            <td>C. Protected classification characteristics</td>
+            <td>
+              Gender, age, date of birth, race and ethnicity, national origin,
+              marital status, etc.
+            </td>
+            <td>NO</td>
+            <td>NO (Unless voluntarily provided)</td>
+          </tr>
+          <tr>
+            <td>D. Commercial information</td>
+            <td>
+              Transaction information, purchase history, financial details,
+              payment information
+            </td>
+            <td>NO</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>E. Biometric information</td>
+            <td>Fingerprints and voiceprints</td>
+            <td>NO</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>F. Internet or other similar network activity</td>
+            <td>
+              Browsing history, search history, online behavior, interest data,
+              interactions with websites, etc.
+            </td>
+            <td>NO</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>G. Geolocation data</td>
+            <td>Device location</td>
+            <td>NO</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>H. Audio, electronic, sensory, or similar information</td>
+            <td>Images and audio, video or call recordings</td>
+            <td>NO (Extension processes audio transiently, doesn't collect)</td>
+            <td>Potentially, if provided in email</td>
+          </tr>
+          <tr>
+            <td>I. Professional or employment-related information</td>
+            <td>
+              Business contact details, job title, work history, professional
+              qualifications
+            </td>
+            <td>NO</td>
+            <td>Potentially, if provided in email</td>
+          </tr>
+          <tr>
+            <td>J. Education Information</td>
+            <td>Student records and directory information</td>
+            <td>NO</td>
+            <td>Potentially, if provided in email</td>
+          </tr>
+          <tr>
+            <td>K. Inferences drawn from collected personal information</td>
+            <td>Profiles summarizing preferences, characteristics</td>
+            <td>NO</td>
+            <td>NO</td>
+          </tr>
+          <tr>
+            <td>L. Sensitive personal Information</td>
+            <td>(As defined by state laws)</td>
+            <td>NO</td>
+            <td>NO (Unless voluntarily provided)</td>
+          </tr>
+        </tbody>
+      </table>
 
-        <h2 id="DNT">8. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
-        <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.</p>
+      <h3>How We Use and Share Personal Information</h3>
+      <p>
+        We use the limited personal information we might collect (primarily from
+        direct contact) as described in "<a href="#infouse"
+          >HOW DO WE PROCESS YOUR INFORMATION?</a
+        >". We do not sell or share personal information with third parties for
+        cross-context behavioral advertising or monetary value. We do not
+        disclose personal information except potentially as required by law.
+      </p>
 
-       <h2 id="uslaws">9. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
-        <p><strong><em>In Short:</em></strong> <em>Residents of certain US states have specific rights regarding their personal information. However, given the limited nature of data collection by this extension, these rights primarily apply to any information you might provide if you contact us directly (e.g., your email address).</em></p>
+      <h3>Your Rights Under US State Laws</h3>
+      <p>Depending on your state of residence, you may have the right to:</p>
+      <ul>
+        <li>Know whether we process your personal data.</li>
+        <li>
+          Access your personal data (primarily email correspondence if you
+          contacted us).
+        </li>
+        <li>Correct inaccuracies in your personal data.</li>
+        <li>
+          Request deletion of your personal data (e.g., your email
+          correspondence).
+        </li>
+        <li>Obtain a copy of your personal data.</li>
+        <li>
+          Opt out of the processing of personal data for purposes of targeted
+          advertising, the sale of personal data, or certain types of profiling
+          (Note: We do not engage in these activities).
+        </li>
+        <li>Right to non-discrimination for exercising your rights.</li>
+        <li>
+          Under California's "Shine The Light" law (Civil Code Section 1798.83),
+          California residents can request information once a year about
+          categories of personal information (if any) disclosed to third parties
+          for direct marketing purposes. (Note: We do not disclose personal
+          information for third-party direct marketing).
+        </li>
+      </ul>
 
-        <p>If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Montana, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, or Virginia, you may have specific rights regarding your personal information under applicable state laws.</p>
+      <h3>How to Exercise Your Rights</h3>
+      <p>
+        To exercise these rights, please contact us using the details provided
+        in Section 11 below. We will need to verify your identity before
+        processing your request, which may involve confirming ownership of the
+        email address used to contact us.
+      </p>
+      <p>
+        You may designate an authorized agent to make a request on your behalf.
+        The agent must provide proof of their authorization.
+      </p>
 
-        <h3>Categories of Personal Information We Collect</h3>
-        <p>As described in Section 1, the Anki Tool extension primarily stores settings locally and processes flashcard content transiently. We do not collect the categories of personal information listed in typical privacy policies (like identifiers, commercial information, geolocation, etc.) through the extension's normal operation. The only potential collection occurs if you contact us directly via email, in which case we collect your email address and any information you voluntarily provide in your message (likely falling under "Identifiers").</p>
-        <p>The following table reflects this limited scope:</p>
+      <h3>Request Verification</h3>
+      <p>
+        Upon receiving your request, we will need to verify your identity to
+        determine you are the same person about whom we have the information in
+        our system. We will only use personal information provided in your
+        request to verify your identity or authority to make the request.
+        However, if we cannot verify your identity from the information already
+        maintained by us, we may request that you provide additional information
+        for the purposes of verifying your identity and for security or
+        fraud-prevention purposes.
+      </p>
+      <p>
+        If you submit the request through an authorized agent, we may need to
+        collect additional information to verify your identity before processing
+        your request and the agent will need to provide a written and signed
+        permission from you to submit such request on your behalf.
+      </p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Examples</th>
-                    <th>Collected via Extension Operation</th>
-                    <th>Collected if You Contact Us</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>A. Identifiers</td>
-                    <td>Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</td>
-                    <td>NO</td>
-                    <td>YES (Email address and any identifiers you provide in your message)</td>
-                </tr>
-                <tr><td>B. Personal information (Cal. Customer Records statute)</td><td>Name, contact information, education, employment, employment history, and financial information</td><td>NO</td><td>Potentially, if provided in email</td></tr>
-                <tr><td>C. Protected classification characteristics</td><td>Gender, age, date of birth, race and ethnicity, national origin, marital status, etc.</td><td>NO</td><td>NO (Unless voluntarily provided)</td></tr>
-                <tr><td>D. Commercial information</td><td>Transaction information, purchase history, financial details, payment information</td><td>NO</td><td>NO</td></tr>
-                <tr><td>E. Biometric information</td><td>Fingerprints and voiceprints</td><td>NO</td><td>NO</td></tr>
-                <tr><td>F. Internet or other similar network activity</td><td>Browsing history, search history, online behavior, interest data, interactions with websites, etc.</td><td>NO</td><td>NO</td></tr>
-                <tr><td>G. Geolocation data</td><td>Device location</td><td>NO</td><td>NO</td></tr>
-                <tr><td>H. Audio, electronic, sensory, or similar information</td><td>Images and audio, video or call recordings</td><td>NO (Extension processes audio transiently, doesn't collect)</td><td>Potentially, if provided in email</td></tr>
-                <tr><td>I. Professional or employment-related information</td><td>Business contact details, job title, work history, professional qualifications</td><td>NO</td><td>Potentially, if provided in email</td></tr>
-                <tr><td>J. Education Information</td><td>Student records and directory information</td><td>NO</td><td>Potentially, if provided in email</td></tr>
-                <tr><td>K. Inferences drawn from collected personal information</td><td>Profiles summarizing preferences, characteristics</td><td>NO</td><td>NO</td></tr>
-                <tr><td>L. Sensitive personal Information</td><td>(As defined by state laws)</td><td>NO</td><td>NO (Unless voluntarily provided)</td></tr>
-            </tbody>
-        </table>
+      <h3>Appeals</h3>
+      <p>
+        Under certain US state data protection laws, if we decline to take
+        action regarding your request, you may appeal our decision by emailing
+        us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>. We
+        will inform you in writing of any action taken or not taken in response
+        to the appeal, including a written explanation of the reasons for the
+        decisions. If your appeal is denied, you may submit a complaint to your
+        state attorney general.
+      </p>
 
-        <h3>How We Use and Share Personal Information</h3>
-        <p>We use the limited personal information we might collect (primarily from direct contact) as described in "<a href="#infouse">HOW DO WE PROCESS YOUR INFORMATION?</a>". We do not sell or share personal information with third parties for cross-context behavioral advertising or monetary value. We do not disclose personal information except potentially as required by law.</p>
+      <h2 id="policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+      <p>
+        Yes, we will update this notice as necessary to stay compliant with
+        relevant laws or reflect changes in our practices.
+      </p>
+      <p>
+        We may update this privacy notice from time to time. The updated version
+        will be indicated by an updated "Last updated" date at the top. If we
+        make material changes, we may notify users through the Chrome Web Store
+        listing or other appropriate means. We encourage you to review this
+        privacy notice frequently to be informed of how we are protecting your
+        information.
+      </p>
 
-        <h3>Your Rights Under US State Laws</h3>
-        <p>Depending on your state of residence, you may have the right to:</p>
-        <ul>
-            <li>Know whether we process your personal data.</li>
-            <li>Access your personal data (primarily email correspondence if you contacted us).</li>
-            <li>Correct inaccuracies in your personal data.</li>
-            <li>Request deletion of your personal data (e.g., your email correspondence).</li>
-            <li>Obtain a copy of your personal data.</li>
-            <li>Opt out of the processing of personal data for purposes of targeted advertising, the sale of personal data, or certain types of profiling (Note: We do not engage in these activities).</li>
-            <li>Right to non-discrimination for exercising your rights.</li>
-             <li>Under California's "Shine The Light" law (Civil Code Section 1798.83), California residents can request information once a year about categories of personal information (if any) disclosed to third parties for direct marketing purposes. (Note: We do not disclose personal information for third-party direct marketing).</li>
-        </ul>
+      <h2 id="contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+      <p>
+        If you have questions or comments about this notice, you may email us at
+        <strong
+          ><a href="mailto:basslawand@gmail.com"
+            >basslawand@gmail.com</a
+          ></strong
+        >.
+      </p>
 
-        <h3>How to Exercise Your Rights</h3>
-        <p>To exercise these rights, please contact us by emailing <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a> or using the contact details at the bottom of this document. We will need to verify your identity before processing your request, which may involve confirming ownership of the email address used to contact us.</p>
-        <p>You may designate an authorized agent to make a request on your behalf. The agent must provide proof of their authorization.</p>
-        <p>If we decline to take action on your request, you may appeal our decision by contacting us via email. If your appeal is denied, you may complain to your state's Attorney General.</p>
-
-
-        <h2 id="policyupdates">10. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
-        <p><strong><em>In Short:</em></strong> <em>Yes, we will update this notice as necessary to stay compliant with relevant laws or reflect changes in our practices.</em></p>
-
-        <p>We may update this privacy notice from time to time. The updated version will be indicated by an updated "Last updated" date at the top. If we make material changes, we may notify users through the Chrome Web Store listing or other appropriate means. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.</p>
-
-        <h2 id="contact">11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
-        <p>If you have questions or comments about this notice, you may email us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>.</p>
-
-        <h2 id="request">12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
-        <p>Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you (primarily locally stored settings or email correspondence), change that information, or delete it. To request to review, update, or delete your personal information, please contact us at <a href="mailto:basslawand@gmail.com">basslawand@gmail.com</a>.</p>
-        <p>Remember that you can typically manage locally stored extension data through your browser's settings or by uninstalling the extension. Management of flashcard data must be done within your Anki application.</p>
-
+      <h2 id="request">
+        12. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+      </h2>
+      <p>
+        Based on the applicable laws of your country or state, you may have the
+        right to request access to the personal information we collect from you
+        (primarily locally stored settings or email correspondence if you
+        contacted us), change that information, or delete it. To request to
+        review, update, or delete your personal information, please contact us
+        using the details provided in Section 11 above.
+      </p>
+      <p>
+        Remember that you can typically manage locally stored extension data
+        through your browser's settings or by uninstalling the extension.
+        Management of flashcard data must be done within your Anki application.
+      </p>
     </div>
-</body>
+  </body>
 </html>
